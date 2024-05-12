@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovieRev</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- navbar top one-->
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">  
+                <h1 class="logo">MovieRev</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active">Home</li>
+                    <li class="menu-list-item">Movies</li>
+                    <li class="menu-list-item">Series</li>
+                    <li class="menu-list-item">Popular</li>
+                </ul>
+            </div>
+            <div class="profile-container">
+                <img class="profile-picture" src="img/profile.jpg" alt="">
+                <div class="profile-text-container">
+                    <span class="profile-text">Profile</span>
+                    <!--from font awesome-->
+                    <i class="fas fa-caret-down"></i>
+                </div>
+
+            </div>  
+        </div>
+    </div>
+    <!--important body-->>
+    <div class="container">
+      <div class="search-container">
+        <input
+          type="text"
+          placeholder="Enter movie name heree..."
+          id="movie-name"
+          value="A Beautiful Day in the Neighborhood"
+        />
+        <button id="search-btn">Search</button>
+      </div>
+      <div id="result"></div>
+    </div>
+    <script src="key.js"></script>
+    <script src="index.js"></script>
+
+    <div class="sidebar">
+        <!--fontawesome:change them to our liking-->
+        <span onclick="location.href='index.html'">
+        <i class="left-menu-icon fas fa-search"></i>
+        </span>
+        <span onclick="location.href='index2.html'">
+        <i class="left-menu-icon fas fa-home" ></i>
+        </span>
+        <!--universe(mcu,lcu,dc..) and friend group and friend-->
+        <i class="left-menu-icon fas fa-users"></i>
+        <!--bookmark for going to watch type thing-->
+        <i class="left-menu-icon fas fa-bookmark"></i>
+        <!--option to watch on ott's (amazon prime,hotstar..)-->
+        <i class="left-menu-icon fas fa-tv"></i>
+        <!--fro future/comig soon:like booking tickets-->
+        <i class="left-menu-icon fas fa-shopping-cart"></i>
+    </div>
+  </body>
+</html>
